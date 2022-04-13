@@ -1,0 +1,1 @@
+This is an API web app which generates advice and a picture, the advice are gotten from https://api.adviceslip.com/ and the pictures are gotten from https://picsum.photos/. This project was developed by DevTruth and you can check my github page for some other cool projects @ https://github.com/DevTruth17

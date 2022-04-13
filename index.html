@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Advice & Picture API</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js' defer></script>
+    <script src="https://kit.fontawesome.com/1600998b47.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="overlay"></div>
+        <div class="one">
+            <p class="advice-id">Advice ID: <span id="advice-id"></span></p>
+            <p class="picture-id">Picture ID: <span id="picture-id"></span></p>
+        </div>
+        <div class="advice-text" id="advice-text">please wait while advice is loading...</div>
+        <div class="btn" id="btn">
+            <i class="fa-solid fa-dice-five"></i>
+        </div>
+    </div>  
+    <div class="attribution">
+        <div class="advice-api">
+            <p>The advice is generated using the <b>Advice Slip JSON API</b> available at <a href="https://api.adviceslip.com/">https://api.adviceslip.com/</a></p>
+        </div>
+        <div class="picture-api">
+            <p id="server">Pictures are generated from: <a href="" id="server-url"></a></p>
+            <p>Picture source <a href="" id="url"></a></p>
+            <p id="author"></p>
+        </div>
+    </div>
+</body>
+</html>

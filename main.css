@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Fredoka:wght@300&family=Grape+Nuts&family=Inter:wght@100&family=Manrope:wght@200&family=Nunito+Sans:wght@200&family=Outfit:wght@100&family=Poppins:wght@100&family=Quicksand:wght@300&family=Teko:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --hue: 0;
+    --color: 0;
+    --background-color: hsl(var(--hue),100%,80%);
+    --text-color: hsl(var(--color),100%,30%)
+}
+body {
+    background: var(--background-color);
+    font-family: 'Grape Nuts', cursive;
+    color: var(--color);
+}
+.advice-api {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    top: 5vh;
+    text-align: center;
+    color: rgb(20, 20, 56);
+    font-family: serif;
+}
+.attribution a {
+    color: var(--text-color);
+}
+.picture-api {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    top: 88vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    overflow: hidden;
+}
+.container {
+    position: relative;
+    left: 30%;
+    top: 20vh;
+    width: 40%;
+    height: 60vh;
+    background: #fff;
+    box-shadow: 0 0 30px 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-size: cover;
+    background-position: center;
+    font-size: 18px;
+    color: #fff;
+    filter: hue-rotate(var(--hue));
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.one {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+#advice-id, #picture-id {
+    font-weight: 900;
+}
+.advice-text {
+    height: 70%;
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    color: var(--text-color);
+    font-weight: 900;
+}
+.btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--background-color);
+    transform: translate(-50%, 50%);
+    box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.6);
+    display: grid;
+    place-items: center;
+    color: hsl(var(--color), 60%, 40%);
+    cursor: pointer;
+}
+.btn:hover, .btn:active {
+    box-shadow: 0px 0px 25px 1px hsl(var(--hue), 60%, 40%);
+}
+.btn i {
+    font-size: 24px;
+    pointer-events: none;
+}
+
+@media (max-width:600px) {
+    .container {
+        left: 5%;
+        width: 90%;
+    }
+}
+
